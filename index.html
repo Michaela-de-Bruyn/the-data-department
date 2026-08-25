@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>The Data Department</title>
+
+    <!-- JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ==============================
+         NAVIGATION
+    =============================== -->
+
+    <nav class="navbar">
+      <div class="logo">THE_DATA_DEPARTMENT</div>
+
+      <div class="system-status">
+        <span class="status-dot"></span>
+
+        SYSTEM_ONLINE
+      </div>
+    </nav>
+
+    <!-- ==============================
+         MAIN
+    =============================== -->
+
+    <main>
+      <!-- ==============================
+             HERO
+        =============================== -->
+
+      <section class="hero">
+        <div class="terminal-path">~/data-department</div>
+
+        <h1>
+          WE HAVE<br />
+
+          <span>A QUERY FOR THAT.</span>
+        </h1>
+
+        <p class="hero-description">
+          Data engineering, analytics and research — one questionable dataset at
+          a time.
+        </p>
+
+        <button class="primary-button" onclick="scrollToProjects()">
+          ENTER_DEPARTMENT →
+        </button>
+      </section>
+
+      <!-- ==============================
+             DEPARTMENT
+        =============================== -->
+
+      <section class="department">
+        <div class="section-label">// 01_DEPARTMENT</div>
+
+        <h2>WHAT HAPPENS HERE?</h2>
+
+        <p class="section-intro">
+          Raw data comes in. Something useful comes out. Occasionally, Excel is
+          involved.
+        </p>
+
+        <div class="process-grid">
+          <!-- INTAKE -->
+
+          <div class="process-card">
+            <div class="card-number">01</div>
+
+            <i class="fa-solid fa-database"></i>
+
+            <h3>INTAKE</h3>
+
+            <p>
+              CSV files, databases, spreadsheets and questionable business
+              requirements.
+            </p>
+          </div>
+
+          <!-- PROCESSING -->
+
+          <div class="process-card">
+            <div class="card-number">02</div>
+
+            <i class="fa-solid fa-gears"></i>
+
+            <h3>PROCESSING</h3>
+
+            <p>SQL, Python, ETL, data modelling and cloud platforms.</p>
+          </div>
+
+          <!-- OUTPUT -->
+
+          <div class="process-card">
+            <div class="card-number">03</div>
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h3>OUTPUT</h3>
+
+            <p>
+              Warehouses, dashboards, analysis and hopefully useful insights.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================
+             PROJECTS
+        =============================== -->
+
+      <section id="projects" class="projects">
+        <div class="section-label">// 02_PROJECTS</div>
+
+        <h2>CURRENT_WORK</h2>
+
+        <div class="project-grid">
+          <!-- PROJECT 001 -->
+
+          <article class="project-card">
+            <div class="project-top">
+              <span> PROJECT_001 </span>
+
+              <span class="project-status"> BUILDING </span>
+            </div>
+
+            <h3>URBAN_BASKET</h3>
+
+            <h4>DATA_WAREHOUSE</h4>
+
+            <p>
+              An end-to-end e-commerce data warehouse project focused on
+              ingestion, transformation, modelling and analytics.
+            </p>
+
+            <div class="tech-stack">
+              <span>SQL</span>
+
+              <span>DATABRICKS</span>
+
+              <span>PYTHON</span>
+
+              <span>GIT</span>
+            </div>
+
+            <a href="#" class="project-link"> VIEW_PROJECT → </a>
+          </article>
+
+          <!-- PROJECT 002 -->
+
+          <article class="project-card">
+            <div class="project-top">
+              <span> PROJECT_002 </span>
+
+              <span class="project-status complete"> COMPLETE </span>
+            </div>
+
+            <h3>PATIENT_READMISSION</h3>
+
+            <h4>MACHINE_LEARNING</h4>
+
+            <p>
+              A data science project exploring patient readmission patterns
+              using structured healthcare data.
+            </p>
+
+            <div class="tech-stack">
+              <span>PYTHON</span>
+
+              <span>DATA_SCIENCE</span>
+
+              <span>ML</span>
+            </div>
+
+            <a href="#" class="project-link"> VIEW_PROJECT → </a>
+          </article>
+
+          <!-- PROJECT 003 -->
+
+          <article class="project-card">
+            <div class="project-top">
+              <span> PROJECT_003 </span>
+
+              <span class="project-status complete"> COMPLETE </span>
+            </div>
+
+            <h3>CLOUD_MIGRATION</h3>
+
+            <h4>DATA_PLATFORM</h4>
+
+            <p>
+              A project involving data extraction, cloud ingestion and reporting
+              using SQL and GCP.
+            </p>
+
+            <div class="tech-stack">
+              <span>SQL</span>
+
+              <span>GCP</span>
+
+              <span>LOOKER</span>
+            </div>
+
+            <a href="#" class="project-link"> VIEW_PROJECT → </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- ==============================
+             INCIDENT
+        =============================== -->
+
+      <section class="incident">
+        <div class="section-label">// 03_SYSTEM_ALERT</div>
+
+        <div class="incident-box">
+          <div class="incident-header">
+            <span> INCIDENT_0042 </span>
+
+            <span class="severity"> HIGH </span>
+          </div>
+
+          <h2>
+            SOMEONE UPLOADED<br />
+
+            ANOTHER EXCEL FILE.
+          </h2>
+
+          <div class="incident-details">
+            <p>
+              <span>STATUS:</span>
+
+              INVESTIGATING
+            </p>
+
+            <p>
+              <span>ROOT_CAUSE:</span>
+
+              EXCEL
+            </p>
+
+            <p>
+              <span>ROWS_AFFECTED:</span>
+
+              84,293
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================
+             TOOLBOX
+        =============================== -->
+
+      <section class="toolbox">
+        <div class="section-label">// 04_TOOLBOX</div>
+
+        <h2>CURRENT_STACK</h2>
+
+        <div class="tools">
+          <span>SQL</span>
+
+          <span>PYTHON</span>
+
+          <span>DATABRICKS</span>
+
+          <span>GCP</span>
+
+          <span>POWER_BI</span>
+
+          <span>GIT</span>
+
+          <span>GITHUB</span>
+
+          <span>POSTGRESQL</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer>
+      <div>THE_DATA_DEPARTMENT</div>
+
+      <div>BUILT_WITH_SQL_AND_COFFEE</div>
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
