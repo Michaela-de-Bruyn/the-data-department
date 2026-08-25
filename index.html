@@ -7,8 +7,12 @@
 
     <title>The Data Department</title>
 
-    <!-- JetBrains Mono -->
+    <!-- =========================================
+         FONT
+    ========================================== -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
@@ -16,20 +20,26 @@
       rel="stylesheet"
     />
 
-    <!-- Font Awesome -->
+    <!-- =========================================
+         ICONS
+    ========================================== -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
 
-    <!-- Main stylesheet -->
+    <!-- =========================================
+         MAIN CSS
+    ========================================== -->
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- ==============================
+    <!-- =========================================
          NAVIGATION
-    =============================== -->
+    ========================================== -->
 
     <nav class="navbar">
       <div class="logo">THE_DATA_DEPARTMENT</div>
@@ -41,37 +51,95 @@
       </div>
     </nav>
 
-    <!-- ==============================
-         MAIN
-    =============================== -->
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
 
     <main>
-      <!-- ==============================
+      <!-- =========================================
              HERO
-        =============================== -->
+        ========================================== -->
 
       <section class="hero">
-        <div class="terminal-path">~/data-department</div>
+        <div class="hero-content">
+          <!-- LEFT SIDE -->
 
-        <h1>
-          WE HAVE<br />
+          <div class="hero-main">
+            <div class="terminal-path">~/data-department</div>
 
-          <span>A QUERY FOR THAT.</span>
-        </h1>
+            <h1>
+              WE HAVE<br />
 
-        <p class="hero-description">
-          Data engineering, analytics and research — one questionable dataset at
-          a time.
-        </p>
+              <span>A QUERY FOR THAT.</span>
+            </h1>
 
-        <button class="primary-button" onclick="scrollToProjects()">
-          ENTER_DEPARTMENT →
-        </button>
+            <p class="hero-description">
+              Data engineering, analytics and research — one questionable
+              dataset at a time.
+            </p>
+
+            <button class="primary-button" onclick="scrollToProjects()">
+              ENTER_DEPARTMENT →
+            </button>
+          </div>
+
+          <!-- RIGHT SIDE -->
+
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <span> SYSTEM_TERMINAL </span>
+
+              <span class="terminal-status"> ● ONLINE </span>
+            </div>
+
+            <div class="terminal-body">
+              <div class="terminal-line">
+                <span>></span>
+
+                SELECT *
+              </div>
+
+              <div class="terminal-line">
+                <span>></span>
+
+                FROM portfolio
+              </div>
+
+              <div class="terminal-line">
+                <span>></span>
+
+                WHERE interesting = TRUE;
+              </div>
+
+              <div class="terminal-result">
+                <div>
+                  <span> PROJECTS_LOADED </span>
+
+                  <strong> 03 </strong>
+                </div>
+
+                <div>
+                  <span> DATA_STACK </span>
+
+                  <strong> 08 </strong>
+                </div>
+
+                <div>
+                  <span> STATUS </span>
+
+                  <strong> OPERATIONAL </strong>
+                </div>
+              </div>
+
+              <div class="terminal-cursor">█</div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- ==============================
+      <!-- =========================================
              DEPARTMENT
-        =============================== -->
+        ========================================== -->
 
       <section class="department">
         <div class="section-label">// 01_DEPARTMENT</div>
@@ -127,110 +195,135 @@
         </div>
       </section>
 
-      <!-- ==============================
-             PROJECTS
-        =============================== -->
+      <div class="project-grid">
+        <!-- =================================
+         PROJECT 001
+    ================================== -->
 
-      <section id="projects" class="projects">
-        <div class="section-label">// 02_PROJECTS</div>
+        <article class="project-card">
+          <div class="project-top">
+            <span> PROJECT_001 </span>
 
-        <h2>CURRENT_WORK</h2>
+            <span class="project-status complete"> COMPLETE </span>
+          </div>
 
-        <div class="project-grid">
-          <!-- PROJECT 001 -->
+          <h3>INCUBETA_DATA_ENGINEERING</h3>
 
-          <article class="project-card">
-            <div class="project-top">
-              <span> PROJECT_001 </span>
+          <h4>BIGQUERY_DATA_PIPELINE</h4>
 
-              <span class="project-status"> BUILDING </span>
-            </div>
+          <p>
+            An end-to-end retail data engineering project using BigQuery,
+            Medallion Architecture, data quality checks and BQML customer
+            segmentation.
+          </p>
 
-            <h3>URBAN_BASKET</h3>
+          <div class="tech-stack">
+            <span>SQL</span>
 
-            <h4>DATA_WAREHOUSE</h4>
+            <span>BIGQUERY</span>
 
-            <p>
-              An end-to-end e-commerce data warehouse project focused on
-              ingestion, transformation, modelling and analytics.
-            </p>
+            <span>GCP</span>
 
-            <div class="tech-stack">
-              <span>SQL</span>
+            <span>BQML</span>
 
-              <span>DATABRICKS</span>
+            <span>GIT</span>
+          </div>
 
-              <span>PYTHON</span>
+          <a
+            href="https://github.com/Michaela-de-Bruyn/incubeta-data-engineer-assessment"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            VIEW_PROJECT →
+          </a>
+        </article>
 
-              <span>GIT</span>
-            </div>
+        <!-- =================================
+         PROJECT 002
+    ================================== -->
 
-            <a href="#" class="project-link"> VIEW_PROJECT → </a>
-          </article>
+        <article class="project-card">
+          <div class="project-top">
+            <span> PROJECT_002 </span>
 
-          <!-- PROJECT 002 -->
+            <span class="project-status complete"> COMPLETE </span>
+          </div>
 
-          <article class="project-card">
-            <div class="project-top">
-              <span> PROJECT_002 </span>
+          <h3>HOSPITAL_ADMISSIONS</h3>
 
-              <span class="project-status complete"> COMPLETE </span>
-            </div>
+          <h4>DATA_QUALITY_PIPELINE</h4>
 
-            <h3>PATIENT_READMISSION</h3>
+          <p>
+            A hands-on data engineering pipeline focused on messy hospital
+            admissions data, deduplication, data quality and reliable reporting.
+          </p>
 
-            <h4>MACHINE_LEARNING</h4>
+          <div class="tech-stack">
+            <span>SQL</span>
 
-            <p>
-              A data science project exploring patient readmission patterns
-              using structured healthcare data.
-            </p>
+            <span>POSTGRESQL</span>
 
-            <div class="tech-stack">
-              <span>PYTHON</span>
+            <span>DATA_QUALITY</span>
 
-              <span>DATA_SCIENCE</span>
+            <span>GIT</span>
+          </div>
 
-              <span>ML</span>
-            </div>
+          <a
+            href="https://github.com/Michaela-de-Bruyn/hospital_admissions_pipeline"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            VIEW_PROJECT →
+          </a>
+        </article>
 
-            <a href="#" class="project-link"> VIEW_PROJECT → </a>
-          </article>
+        <!-- =================================
+         PROJECT 003
+    ================================== -->
 
-          <!-- PROJECT 003 -->
+        <article class="project-card">
+          <div class="project-top">
+            <span> PROJECT_003 </span>
 
-          <article class="project-card">
-            <div class="project-top">
-              <span> PROJECT_003 </span>
+            <span class="project-status complete"> COMPLETE </span>
+          </div>
 
-              <span class="project-status complete"> COMPLETE </span>
-            </div>
+          <h3>HOSPITAL_PATIENT_FLOW</h3>
 
-            <h3>CLOUD_MIGRATION</h3>
+          <h4>HEALTHCARE_ANALYTICS</h4>
 
-            <h4>DATA_PLATFORM</h4>
+          <p>
+            A healthcare analytics project demonstrating Medallion Architecture,
+            SQL data engineering, data quality, dimensional modelling and
+            business-focused insights.
+          </p>
 
-            <p>
-              A project involving data extraction, cloud ingestion and reporting
-              using SQL and GCP.
-            </p>
+          <div class="tech-stack">
+            <span>SQL</span>
 
-            <div class="tech-stack">
-              <span>SQL</span>
+            <span>DATABRICKS</span>
 
-              <span>GCP</span>
+            <span>POWER_BI</span>
 
-              <span>LOOKER</span>
-            </div>
+            <span>GIT</span>
+          </div>
 
-            <a href="#" class="project-link"> VIEW_PROJECT → </a>
-          </article>
-        </div>
-      </section>
+          <a
+            href="https://github.com/Michaela-de-Bruyn/hospital-patient-flow-analytics"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            VIEW_PROJECT →
+          </a>
+        </article>
+      </div>
 
-      <!-- ==============================
-             INCIDENT
-        =============================== -->
+      <!-- =========================================
+             SYSTEM ALERT
+        ========================================== -->
 
       <section class="incident">
         <div class="section-label">// 03_SYSTEM_ALERT</div>
@@ -270,9 +363,9 @@
         </div>
       </section>
 
-      <!-- ==============================
+      <!-- =========================================
              TOOLBOX
-        =============================== -->
+        ========================================== -->
 
       <section class="toolbox">
         <div class="section-label">// 04_TOOLBOX</div>
@@ -299,9 +392,9 @@
       </section>
     </main>
 
-    <!-- ==============================
+    <!-- =========================================
          FOOTER
-    =============================== -->
+    ========================================== -->
 
     <footer>
       <div>THE_DATA_DEPARTMENT</div>
@@ -309,7 +402,9 @@
       <div>BUILT_WITH_SQL_AND_COFFEE</div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
 
     <script src="script.js"></script>
   </body>
